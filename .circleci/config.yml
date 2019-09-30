@@ -8,7 +8,7 @@ jobs:
        - checkout
        - run: 
             name: Execute Katalon Tests
-            command: command: cd Katalon Studio/Int;katalon-execute.sh -noSplash -consoleLog -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/IntPlan" -apiKey=${api-key} -executionProfile="default"
+            command: cd Katalon Studio/Int;katalon-execute.sh -noSplash -consoleLog -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/IntPlan" -apiKey=${api-key} -executionProfile="default"
        - store-test_results:
             path: ./Katalon Studio/report
        - store-artifacts:
