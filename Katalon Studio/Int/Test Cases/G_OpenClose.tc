@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Open Close</description>
+   <name>G_OpenClose</name>
+   <tag>Basic Google Search</tag>
+   <comment></comment>
+   <testCaseGuid>c4907a89-4808-411f-b73a-2ee495a51529</testCaseGuid>
+</TestCaseEntity>
