@@ -7,7 +7,7 @@ jobs:
        - checkout
        - run: 
             name: Execute Katalon Tests
-            command: cd KatalonStudio/Int;katalon-execute.sh -noSplash -consoleLog -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/IntPlan" 
+            command: cd KatalonStudio/Int;cp -r Plugins $KATALON_KATALON_INSTALL_DIR/configuration/; echo ${testrail_config} > ./settings/external/com.katalon.katalon-studio-testrail-plugin.properties;katalon-execute.sh -noSplash -consoleLog -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/S2_IntPlan" -apiKey=${api-key} -executionProfile="default"
        - store-test_results:
             path: ./KatalonStudio/report
        - store-artifacts:
